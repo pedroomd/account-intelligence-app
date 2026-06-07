@@ -1,0 +1,20 @@
+[project]
+name = "account-intelligence"
+version = "0.1.0"
+description = "Account Intelligence app for AEs: prioritized accounts and AI-generated meeting prep."
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "matplotlib>=3.7",
+    "seaborn>=0.13",
+    "streamlit>=1.40",
+    "pydantic-ai-slim[google]>=0.0.50",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = ["ipykernel==7.2.0"]
+
+[tool.uv]
+package = false
